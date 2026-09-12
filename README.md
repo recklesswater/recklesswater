@@ -1,30 +1,31 @@
 # Hi there, I'm Jianghai Chang 👋
 
-**Medical AI & AIDD Researcher | Deep Learning Engineer | Omics Architect**
+**AI for life science — multi-omics, molecular modelling, and small structural tools**
 
-I am passionate about solving complex chemical and medical AI problems. By bridging deep learning architectures with computational chemistry and high-dimensional multi-omics, I aim to decode biological mechanisms and accelerate drug discovery.
+I work on the boundary between computation and wet-lab biology: multi-omics data pipelines, representation learning for high-dimensional assays, and small self-contained utilities for structural questions. Currently based in Hangzhou.
 
-### 🔬 Core Focus & Upcoming Endeavors
+### 🔬 What I work on
 
-- **Deep Learning for Chemistry & Medicine:** Currently exploring Graph Neural Networks (GNNs) for lipid structure representations and implementing gradCAM for molecular heatmap interpretability.
-- **Structural Biology & AIDD (AI in Drug Discovery):** Proficient in computational chemistry applications, including Free Energy Perturbation (FEP) calculations, protein dihedral angle analysis, and molecular docking using AutoDock.
-- **Multi-Omics Data Engineering:** Architecting automated feature annotation and isomer resolution pipelines for untargeted Metabolomics (MALDI-TOF) and Lipidomics.
-- **Clinical Bioinformatics:** Robust survival analysis, Kaplan-Meier curves, and Decision Curve Analysis (DCA) with rigorous subgroup evaluations.
+- **Multi-omics data engineering:** automated feature annotation and isomer resolution for MALDI-TOF metabolomics and lipidomics — the parts nobody enjoys, but everything downstream depends on them.
+- **Representation learning:** autoencoders for high-dimensional, low-sample-size omics data, and the question of what to transfer when the feature columns do not travel.
+- **Structural tools:** small utilities that answer one question from a structure alone. No simulation when a cheaper answer exists.
+- **Interpretability:** gradCAM, SHAP, and a general preference for models whose behaviour can be explained to a chemist.
 
-### 🛠 Tech Stack & Tools
+### 📦 Featured projects
+
+- **[tc-coupling-profile](https://github.com/recklesswater/tc-coupling-profile)** — a structure-derived indicator (block total correlation of the Gaussian Network Model) for where assuming independent residue motion costs the most. Pure numpy, no simulation, no training.
+- **[omics-ae-classifier](https://github.com/recklesswater/omics-ae-classifier)** — latent-space representation learning for high-dimensional low-sample-size omics: pre-train an autoencoder on a discovery cohort, freeze the encoder, adapt the head.
+
+### 🛠 Tech stack
 
 - **Languages:** Python, R
-- **Deep/Machine Learning:** GNNs, Autoencoders, LightGBM, Lasso Regression, Domain Adaptation.
-- **Interpretability:** gradCAM, SHAP values, Net Reclassification Index (NRI).
-- **Computational Chemistry:** AutoDock, FEP calculation workflows, molecular dynamics analysis.
-- **Platforms:** GitHub Copilot, Code Ocean, Google AI Studio.
+- **Deep / machine learning:** PyTorch, scikit-learn, LightGBM, autoencoders, graph neural networks
+- **Omics:** mass-spectrometry data, spatial omics, single-cell tooling
+- **Computational chemistry:** Schrödinger, AutoDock, FEP workflows, molecular dynamics analysis
+- **Interpretability:** gradCAM, SHAP
 
-### 🚀 Featured Projects
+### ⚡ Beyond the code
 
-- 📦 **[AutoLipidAnnotator](https://github.com/recklesswater/AutoLipidAnnotator)**: An automated MALDI-TOF pipeline resolving adduct redundancy in untargeted lipidomics using a dual-scoring resolution algorithm.
-- 📦 **[AutoMetAnnotator](https://github.com/recklesswater/AutoMetAnnotator)**: A multi-tiered stochastic tie-breaking algorithm designed for MALDI-TOF spatial metabolomics to resolve low-molecular-weight isomers.
-- ⏳ **[Work in Progress]:** GNN-based lipidomics classification pipeline & gradCAM molecular heatmap visualization.
+Despite daily encounters with complex algorithms, I still consider myself a coding novice on a lifelong learning journey. Away from the keyboard I am an enthusiast of palaeontology and entomology — endlessly fascinated by the structural evolution of life across geological time.
 
-### ⚡ Beyond the Code
-
-Despite my daily encounters with complex algorithms, I still consider myself a coding novice on a lifelong learning journey. When I step away from the keyboard, I am an avid enthusiast of paleontology and entomology—endlessly fascinated by the structural evolution of life across geological time.
+📫 giantflood@gmail.com
